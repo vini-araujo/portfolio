@@ -1,5 +1,4 @@
 import { Column, Heading, Meta, Schema } from "@once-ui-system/core";
-import { Mailchimp } from "@/components";
 import { Posts } from "@/components/blog/Posts";
 import { baseURL, blog, person, newsletter } from "@/resources";
 
@@ -13,7 +12,7 @@ export async function generateMetadata() {
   });
 }
 
-export default function Blog() {
+export default function Projects() {
   return (
     <Column maxWidth="m" paddingTop="24">
       <Schema
@@ -25,7 +24,7 @@ export default function Blog() {
         image={`/api/og/generate?title=${encodeURIComponent(blog.title)}`}
         author={{
           name: person.name,
-          url: `${baseURL}/blog`,
+          url: `${baseURL}${blog.path}`,
           image: `${baseURL}${person.avatar}`,
         }}
       />
@@ -33,13 +32,7 @@ export default function Blog() {
         {blog.title}
       </Heading>
       <Column fillWidth flex={1} gap="40">
-        <Posts range={[1, 1]} thumbnail />
-        <Posts range={[2, 3]} columns="2" thumbnail direction="column" />
-        <Mailchimp marginBottom="l" />
-        <Heading as="h2" variant="heading-strong-xl" marginLeft="l">
-          Earlier posts
-        </Heading>
-        <Posts range={[4]} columns="2" />
+        <Posts range={[1, 2]} thumbnail />
       </Column>
     </Column>
   );

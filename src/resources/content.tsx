@@ -94,7 +94,7 @@ const about: About = {
     display: true,
   },
   calendar: {
-    display: true,
+    display: false,
     link: "https://cal.com",
   },
   intro: {
@@ -102,7 +102,7 @@ const about: About = {
     title: "Introduction",
     description: (
       <>
-        Hey I'm Vini, Brazilian software engineer based in Wisconsin with a passion for transforming software ideas into 
+        Hey I'm Vini, a Brazilian software engineer based in Wisconsin. I have a passion for transforming software ideas into 
         deployable and scalable applications. With and emphasis on system design and architecture, thinking about
         trade-offs and business logic.
 
@@ -174,7 +174,7 @@ const about: About = {
     institutions: [
       {
         name: "University of Wisconsin - Eau Claire",
-        description: <>Studied Computer Science.</>,
+        description: <>Junior Computer Science student.</>,
       },
       {
         name: "Udemy 365 Instructors: The Data Science Course: Complete Data Science Bootcamp 2024 ",
@@ -242,20 +242,20 @@ const about: About = {
 };
 
 const blog: Blog = {
-  path: "/blog",
-  label: "Blog",
-  title: "Writing about design and tech...",
-  description: `Read what ${person.name} has been up to recently`,
-  // Create new blog posts by adding a new .mdx file to app/blog/posts
-  // All posts will be listed on the /blog route
+  path: "/projects",
+  label: "Projects",
+  title: "Projects",
+  description: `Project updates from ${person.name}`,
+  // Create new project posts by adding a new .mdx file to app/projects/posts
+  // All posts will be listed on the /projects route
 };
 
 const work: Work = {
   path: "/work",
-  label: "Work",
+  label: "Projects",
   title: `Projects – ${person.name}`,
-  description: `Design and dev projects by ${person.name}`,
-  // Create new project pages by adding a new .mdx file to app/blog/posts
+  description: `Projects and case studies by ${person.name}`,
+  // Create new project pages by adding a new .mdx file to app/projects/posts
   // All projects will be listed on the /home and /work routes
 };
 

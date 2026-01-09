@@ -17,7 +17,7 @@ export function Posts({
   exclude = [],
   direction,
 }: PostsProps) {
-  let allBlogs = getPosts(["src", "app", "blog", "posts"]);
+  let allBlogs = getPosts(["src", "app", "projects", "posts"]);
 
   // Exclude by slug (exact match)
   if (exclude.length) {

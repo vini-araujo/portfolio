@@ -28,10 +28,17 @@ export default function Work() {
           image: `${baseURL}${person.avatar}`,
         }}
       />
-      <Heading marginBottom="l" variant="heading-strong-xl" align="center">
+      <Heading marginBottom="l" variant="heading-strong-xl" marginLeft="24">
         {work.title}
       </Heading>
-      <Projects />
+      <Column fillWidth flex={1} gap="40">
+        <Projects range={[1, 1]} />
+        <Projects range={[2, 3]} />
+        <Heading as="h2" variant="heading-strong-xl" marginLeft="l">
+          Earlier projects
+        </Heading>
+        <Projects range={[4]} />
+      </Column>
     </Column>
   );
 }
