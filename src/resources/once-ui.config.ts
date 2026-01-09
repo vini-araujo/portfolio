@@ -17,7 +17,7 @@ import { home } from "./index";
 const baseURL: string = "https://demo.magic-portfolio.com";
 
 const routes: RoutesConfig = {
-  "/": false,
+  "/": true,
   "/about": true,
   "/work": false,
   "/projects": true,

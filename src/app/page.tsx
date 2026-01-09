@@ -25,7 +25,11 @@ export async function generateMetadata() {
   });
 }
 
+import { redirect } from "next/navigation";
+
 export default function Home() {
+  redirect("/about");
+
   return (
     <Column maxWidth="m" gap="xl" paddingY="12" horizontal="center">
       <Schema
