@@ -2,14 +2,14 @@ import { About, Blog, Gallery, Home, Newsletter, Person, Social, Work } from "@/
 import { Line, Row, Text } from "@once-ui-system/core";
 
 const person: Person = {
-  firstName: "Selene",
-  lastName: "Yu",
-  name: `Selene Yu`,
-  role: "Design Engineer",
-  avatar: "/images/avatar.jpg",
-  email: "example@gmail.com",
-  location: "Asia/Jakarta", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
-  languages: ["English", "Bahasa"], // optional: Leave the array empty if you don't want to display languages
+  firstName: "Vinicius",
+  lastName: "Araujo",
+  name: "Vini Araujo",
+  role: "Software Engineer",
+  avatar: "/images/portfolio-pfp.jpg",
+  email: "araujovd1522@uwec.edu",
+  location: "America/Chicago", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
+  languages: ["English", "Portuguese", "Spanish"], // optional: Leave the array empty if you don't want to display languages
 };
 
 const newsletter: Newsletter = {
@@ -25,13 +25,13 @@ const social: Social = [
   {
     name: "GitHub",
     icon: "github",
-    link: "https://github.com/once-ui-system",
+    link: "https://github.com/vini-araujo",
     essential: true,
   },
   {
     name: "LinkedIn",
     icon: "linkedin",
-    link: "https://www.linkedin.com/company/once-ui/",
+    link: "https://www.linkedin.com/in/vini-araujo13",
     essential: true,
   },
   {
@@ -44,7 +44,7 @@ const social: Social = [
     name: "Threads",
     icon: "threads",
     link: "https://www.threads.com/@once_ui",
-    essential: true,
+    essential: false,
   },
   {
     name: "Email",
@@ -60,7 +60,7 @@ const home: Home = {
   label: "Home",
   title: `${person.name}'s Portfolio`,
   description: `Portfolio website showcasing my work as a ${person.role}`,
-  headline: <>Building bridges between design and code</>,
+  headline: <>Systems design and engineering</>,
   featured: {
     display: true,
     title: (
@@ -76,7 +76,7 @@ const home: Home = {
   },
   subline: (
     <>
-    I'm Selene, a design engineer at <Text as="span" size="xl" weight="strong">ONCE UI</Text>, where I craft intuitive <br /> user experiences. After hours, I build my own projects.
+    I'm Vini, a Computer Science Major at <Text as="span" size="xl" weight="strong">University of Wisconsin - Eau Claire</Text>, where I lead Full-Stack software projects <br /> and undergraduate research.
 </>
   ),
 };
@@ -102,9 +102,10 @@ const about: About = {
     title: "Introduction",
     description: (
       <>
-        Selene is a Jakarta-based design engineer with a passion for transforming complex challenges
-        into simple, elegant design solutions. Her work spans digital interfaces, interactive
-        experiences, and the convergence of design and technology.
+        Hey I'm Vini, Brazilian software engineer based in Wisconsin with a passion for transforming software ideas into 
+        deployable and scalable applications. With and emphasis on system design and architecture, thinking about
+        trade-offs and business logic.
+
       </>
     ),
   },
@@ -113,41 +114,54 @@ const about: About = {
     title: "Work Experience",
     experiences: [
       {
-        company: "FLY",
-        timeframe: "2022 - Present",
-        role: "Senior Design Engineer",
+        company: "University of Wisconsin - Eau Claire",
+        timeframe: "2025 - Present",
+        role: "Web Developer/IT Intern",
         achievements: [
           <>
-            Redesigned the UI/UX for the FLY platform, resulting in a 20% increase in user
-            engagement and 30% faster load times.
+            "Maintained and improved the Recreation websites and pages for uwec. Updated the information
+            and pictures whenever needed to ensure it was up to date."
           </>,
           <>
-            Spearheaded the integration of AI tools into design workflows, enabling designers to
-            iterate 50% faster.
+            "Worked with the marketing and design teams to deliver the features they planned for the clients
+            on the website."
           </>,
         ],
         images: [
           // optional: leave the array empty if you don't want to display images
           {
-            src: "/images/projects/project-01/cover-01.jpg",
-            alt: "Once UI Project",
+            src: "/images/web-developer-screenshots/sports-rec-1.png",
+            alt: "Sports Rec Page",
+            width: 16,
+            height: 9,
+          },
+          {
+            src: "/images/web-developer-screenshots/sports-rec-2.png",
+            alt: "Sports Rec Page",
+            width: 16,
+            height: 9,
+          },
+          {
+            src: "/images/web-developer-screenshots/sports-rec-3.png",
+            alt: "Sports Rec Page",
             width: 16,
             height: 9,
           },
         ],
       },
       {
-        company: "Creativ3",
-        timeframe: "2018 - 2022",
-        role: "Lead Designer",
+        company: "University of Wisconsin - Eau Claire",
+        timeframe: "2023 - 2024",
+        role: "Java Teaching Assistant (TA)",
         achievements: [
           <>
-            Developed a design system that unified the brand across multiple platforms, improving
-            design consistency by 40%.
+            Assisted professor and 25 students in Intro to Programming in Java class
           </>,
           <>
-            Led a cross-functional team to launch a new product line, contributing to a 15% increase
-            in overall company revenue.
+            Conducted lab sessions, graded assignments, and provided one-on-one coding support during office hours
+          </>,
+           <>
+            Improved student debugging efficiency by 40% through hands-on guidance and tailored explanations.
           </>,
         ],
         images: [],
@@ -159,12 +173,12 @@ const about: About = {
     title: "Studies",
     institutions: [
       {
-        name: "University of Jakarta",
-        description: <>Studied software engineering.</>,
+        name: "University of Wisconsin - Eau Claire",
+        description: <>Studied Computer Science.</>,
       },
       {
-        name: "Build the Future",
-        description: <>Studied online marketing and personal branding.</>,
+        name: "Udemy 365 Instructors: The Data Science Course: Complete Data Science Bootcamp 2024 ",
+        description: <>Studied Data Science, Python, Machine Learning and Deep Learning.</>,
       },
     ],
   },
@@ -173,26 +187,21 @@ const about: About = {
     title: "Technical skills",
     skills: [
       {
-        title: "Figma",
+        title: "System Design and architecture",
         description: (
-          <>Able to prototype in Figma with Once UI with unnatural speed.</>
+          <>Able to plan and design Full-Stack scalable systems.
+            I understand business logic and trade-offs that come with software applications.</>
         ),
         tags: [
           {
-            name: "Figma",
+            name: "System Design",
             icon: "figma",
           },
         ],
         // optional: leave the array empty if you don't want to display images
         images: [
           {
-            src: "/images/projects/project-01/cover-02.jpg",
-            alt: "Project image",
-            width: 16,
-            height: 9,
-          },
-          {
-            src: "/images/projects/project-01/cover-03.jpg",
+            src: "/images/system-design.png",
             alt: "Project image",
             width: 16,
             height: 9,
@@ -202,7 +211,7 @@ const about: About = {
       {
         title: "Next.js",
         description: (
-          <>Building next gen apps with Next.js + Once UI + Supabase.</>
+          <>Building next gen apps with Next.js + (Python + FastAPI || Java + Spring Boot) + (Supabase/PostgreSQL).</>
         ),
         tags: [
           {
@@ -221,7 +230,7 @@ const about: About = {
         // optional: leave the array empty if you don't want to display images
         images: [
           {
-            src: "/images/projects/project-01/cover-04.jpg",
+            src: "/images/full-stack.jpeg",
             alt: "Project image",
             width: 16,
             height: 9,
