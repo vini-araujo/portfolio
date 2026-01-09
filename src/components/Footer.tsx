@@ -32,7 +32,7 @@ export const Footer = () => {
         </Text>
         <Row gap="16">
           {social
-            .filter((item) => item.name !== "Threads")
+            .filter((item) => item.name !== "Threads" && item.name !== "Instagram")
             .map(
               (item) =>
                 item.link && (
