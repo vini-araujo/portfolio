@@ -2,9 +2,9 @@ import "@once-ui-system/core/css/styles.css";
 import "@once-ui-system/core/css/tokens.css";
 import "@/resources/custom.css";
 
+
 import classNames from "classnames";
 
-import { Analytics } from "@vercel/analytics/react";
 import {
   Background,
   Column,
@@ -164,7 +164,6 @@ export default async function RootLayout({
             </Flex>
           </Flex>
           <Footer />
-          <Analytics />
         </Column>
       </Providers>
     </Flex>
